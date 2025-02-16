@@ -64,7 +64,7 @@ export default function BankDetails() {
                             {/* Copy Button */}
                             <div className="mt-6 flex justify-center">
                                 <button
-                                    className="bg-[#ff7e1c] text-[#ffffff] px-6 py-3 rounded-lg font-bold flex items-center hover:bg-[#e6b800] transition-colors duration-300"
+                                    className="bg-[#030269] text-white px-6 py-3 rounded-lg font-bold flex items-center hover:bg-[#0c0076] transition-colors duration-300"
                                     onClick={() => handleCopyAll(bank.info)}
                                 >
                                     <FaCopy className="mr-2" /> Copy All Bank Details

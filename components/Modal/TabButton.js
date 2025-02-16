@@ -11,7 +11,7 @@ export default function TabButton({ activeTab, setActiveTab, tab }) {
             className={clsx(
                 "flex-1 p-2",
                 activeTab === tab
-                    ? "bg-[#dd0300] text-[#ffffff] border-b-2 border-[#0c0076] font-bold"
+                    ? "bg-[#111828] text-[#ffffff] border-b-2 border-[#111828] font-bold"
                     : "text-gray-500"
             )}
             onClick={() => setActiveTab(tab)}
