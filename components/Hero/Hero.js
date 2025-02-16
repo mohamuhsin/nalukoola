@@ -53,9 +53,10 @@ export default function Hero() {
                         <Image
                             src={image}
                             alt="hero image"
-                            onLoadingComplete={handleImageLoad}
+                            onLoad={handleImageLoad}
                             className="object-cover w-full h-full"
-                            layout="fill"
+                            fill
+                            priority
                         />
                     </motion.div>
                 ))}
