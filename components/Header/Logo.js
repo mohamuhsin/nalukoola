@@ -1,17 +1,23 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Logo() {
     return (
-        <div className="flex items-center gap-2 sm:gap-4 flex-1">
-            <div className="text-3xl sm:text-4xl font-bold uppercase tracking-wide text-center sm:text-left transition duration-300 ease-in-out transform hover:scale-105">
-                <Link
-                    href="/"
-                    className="text-white hover:text-[#dd0300] transition duration-300 ease-in-out"
-                    aria-label="Home"
-                >
-                    <span className="font-extrabold">Nalukoola</span>
-                </Link>
-            </div>
+        <div className="ml-4">
+            {/* Moves the logo slightly to the right */}
+            <Link
+                href="/"
+                className="flex items-center hover:scale-105 transform transition-all duration-300 ease-in-out"
+            >
+                <Image
+                    src="/nalukoola.png" // Ensure this is the correct path
+                    alt="Nalukoola Logo"
+                    width={150} // Adjust this as needed
+                    height={0} // Adjust this as needed
+                    className="object-contain h-auto w-auto" // Ensures it scales correctly
+                    priority
+                />
+            </Link>
         </div>
     );
 }

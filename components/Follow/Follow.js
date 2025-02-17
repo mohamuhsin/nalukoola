@@ -13,8 +13,8 @@ export default function Follow() {
                     Follow Me on Social Media
                 </h2>
                 <p className="mt-4 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    Stay updated with the latest news, insights, and progress. Let&apos;s
-                    stay connected!
+                    Stay informed with the latest updates, key developments, and progress
+                    on our journey. Together, we can make a difference!&quot;
                 </p>
                 {/* Social Media Icons */}
                 <div className="mt-10 flex justify-center gap-6 sm:gap-8">
