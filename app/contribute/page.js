@@ -3,8 +3,8 @@ import Contribute from "@/components/Contribute/Contribute";
 import Follow from "@/components/Follow/Follow";
 
 export const metadata = {
-    title: "Nalukoola Elias Luyimbazi | Contribution Page",
-    description: "Ekkula Ly'omuntu W'abulijjo",
+    title: "Luyimbazi Elias Nalukoola | Contribution",
+    description: "Join Nalukoola in this fight",
 };
 
 export default function Home() {
