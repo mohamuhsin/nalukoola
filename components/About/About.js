@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 export default function AboutPolitician() {
     return (
-        <section id="about" className="bg-gray-50 py-16 sm:py-24">
-            <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch h-full">
+        <section id="about" className="bg-gray-50 py-16 sm:py-24 px-6 sm:px-12">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch h-full">
                 {/* Left Side: Politician's Bio */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
