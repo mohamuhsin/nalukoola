@@ -8,7 +8,7 @@ export default function ContactInfo() {
             {/* Home Link with Home Icon */}
             <Link
                 href="/"
-                className="flex items-center gap-3 text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 py-2 px-4 rounded-lg"
+                className="flex items-center gap-3 text-white hover:text-white transition duration-300 ease-in-out transform hover:scale-105 py-2 px-4 rounded-lg"
                 aria-label="Home"
             >
                 <FaHome className="text-3xl text-[#dd0300]" />{" "}
@@ -18,7 +18,7 @@ export default function ContactInfo() {
             {/* Phone Link */}
             <Link
                 href="tel:+256700123456"
-                className="flex items-center gap-3 text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 py-2 px-4 rounded-lg"
+                className="flex items-center gap-3 text-white hover:text-white transition duration-300 ease-in-out transform hover:scale-105 py-2 px-4 rounded-lg"
                 aria-label="Phone Number"
             >
                 <FiPhone className="text-3xl text-[#dd0300]" />{" "}
@@ -28,7 +28,7 @@ export default function ContactInfo() {
             {/* Email Link */}
             <Link
                 href="mailto:nalukoola@example.com"
-                className="flex items-center gap-3 text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 py-2 px-4 rounded-lg"
+                className="flex items-center gap-3 text-white hover:text-white transition duration-300 ease-in-out transform hover:scale-105 py-2 px-4 rounded-lg"
                 aria-label="Email"
             >
                 <FiMail className="text-3xl text-[#dd0300]" />{" "}
