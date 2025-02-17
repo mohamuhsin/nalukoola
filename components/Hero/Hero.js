@@ -73,7 +73,7 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.5 }}
                     className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight sm:leading-snug max-w-4xl mx-auto sm:mx-0"
                 >
-                    Nalukoola For Kawempe North
+                    Nalukoola For Kawempe North.
                 </motion.h1>
 
                 <motion.p
