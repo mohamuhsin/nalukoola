@@ -65,22 +65,22 @@ export default function Hero() {
             {/* Overlay for Better Readability */}
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            {/* Content */}
-            <div className="relative text-center sm:text-left px-6 md:px-12">
+            {/* Content - Centered */}
+            <div className="relative flex flex-col items-center text-center px-6 md:px-12">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight sm:leading-snug max-w-4xl mx-auto sm:mx-0"
+                    className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight sm:leading-snug max-w-4xl"
                 >
-                    Nalukoola For Kawempe North.
+                    Nalukoola For Kawempe North
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.7 }}
-                    className="mt-6 text-lg sm:text-2xl text-gray-200 max-w-3xl mx-auto sm:mx-0"
+                    className="mt-6 text-lg sm:text-2xl text-gray-200 max-w-3xl"
                 >
                     A Protest Vote Starts Here – Kawempe North Leads the Way! The
                     revolution continues. Let’s unite and reclaim our seat! Support the
@@ -91,7 +91,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.9 }}
-                    className="mt-10 flex flex-col sm:flex-row gap-6 justify-center sm:justify-start"
+                    className="mt-10 flex flex-col sm:flex-row gap-6"
                 >
                     <Link href="/contribute">
                         <motion.button
