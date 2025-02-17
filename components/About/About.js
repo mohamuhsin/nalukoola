@@ -15,24 +15,28 @@ export default function AboutPolitician() {
                     className="flex flex-col justify-center h-full"
                 >
                     <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800">
-                        About Nalukoola Elias
+                        Luyimbazi Elias Nalukoola
                     </h2>
                     <p className="mt-4 text-lg text-gray-600">
-                        Nalukoola Elias has dedicated their life to fighting for justice,
-                        equality, and the betterment of the community. With years of
-                        experience in [specific fields or positions], they have earned the
-                        trust of the people and are now running for office to continue their
-                        mission of change.
+                        Luyimbazi Elias Nalukoola is a dedicated Human Rights Lawyer, and a
+                        firm believer in justice and democracy. With years of experience in
+                        legal practice, he has fearlessly defended the rights of the
+                        oppressed. Born and raised in Kawempe, Nalukoola understands the
+                        challenges facing Kawempe North.
+                        <br /> <br />
+                        His commitment to fairness, equality, and development has made him a
+                        trusted voice for the people. Now, he is stepping forward to
+                        champion real change in Kawempe North.
                     </p>
 
                     {/* Politician's Vision */}
                     <div className="mt-10">
                         <h3 className="text-2xl font-semibold text-gray-800">The Vision</h3>
                         <p className="mt-4 text-lg text-gray-600">
-                            Nalukoola Elias is passionate about bringing progress and reform
-                            to the community. Their vision is to empower citizens, ensure a
-                            better future for the next generation, and restore integrity in
-                            leadership.
+                            My vision is clear: a community where justice prevails,
+                            opportunities are accessible, and democracy thrives. <br /> <br />
+                            Join Nalukoola in this fight. Together, we can reclaim our voice,
+                            our power, and our future.
                         </p>
                     </div>
 

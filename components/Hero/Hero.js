@@ -63,7 +63,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Overlay for Better Readability */}
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+            <div className="absolute inset-0 bg-black opacity-50"></div>
 
             {/* Content */}
             <div className="relative text-center sm:text-left px-6 md:px-12">
@@ -71,19 +71,20 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="text-3xl sm:text-5xl font-extrabold leading-tight sm:leading-snug max-w-3xl mx-auto sm:mx-0"
+                    className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight sm:leading-snug max-w-4xl mx-auto sm:mx-0"
                 >
-                    The Golden Age of Uganda, Begins With Kawempe North
+                    Nalukoola For Kawempe North
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.7 }}
-                    className="mt-6 text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto sm:mx-0"
+                    className="mt-6 text-lg sm:text-2xl text-gray-200 max-w-3xl mx-auto sm:mx-0"
                 >
-                    Together, we can build a brighter tomorrow. Let’s unite, empower each
-                    other, and create lasting change for the people.
+                    A Protest Vote Starts Here – Kawempe North Leads the Way! The
+                    revolution continues. Let’s unite and reclaim our seat! Support the
+                    fight for democracy. Join the campaign today.
                 </motion.p>
 
                 <motion.div
