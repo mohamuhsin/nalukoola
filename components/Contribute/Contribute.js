@@ -1,27 +1,143 @@
-// components/Donation.js
-
 "use client";
 
 import { useState } from "react";
-import Background from "./Background";
-import Header from "./Header";
-import Statement from "./Statement";
-import Quote from "./Quote";
-import AmountCollected from "./AmountCollected";
-import Button from "./Button";
+import Image from "next/image";
+import { FaHandHoldingHeart } from "react-icons/fa";
 
-export default function Contribute() {
-    const [amount, setAmount] = useState(1200);
+export default function CampaignSection() {
+    const [copyStatus, setCopyStatus] = useState(""); // For showing copy success/failure message
+    const [copiedNumber, setCopiedNumber] = useState(null); // For showing copy success tooltip
+
+    // Function to handle copy action
+    const handleCopy = (paymentNumber, provider) => {
+        navigator.clipboard
+            .writeText(paymentNumber)
+            .then(() => {
+                setCopiedNumber(provider);
+                setCopyStatus("Copied!");
+            })
+            .catch(() => setCopyStatus("Failed to copy"));
+
+        // Reset copy status after 2 seconds
+        setTimeout(() => {
+            setCopyStatus("");
+            setCopiedNumber(null);
+        }, 2000);
+    };
 
     return (
-        <section className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-0">
-            <Background />
-            <div className="relative z-10 px-6 py-12 sm:px-16 flex flex-col items-center justify-center w-full h-full space-y-8 text-center">
-                <Header />
-                <Statement />
-                <Quote />
-                <AmountCollected amount={amount} />
-                <Button />
+        <section className="bg-gray-50 py-16 px-6 flex justify-center">
+            <div className="max-w-6xl w-full bg-white shadow-2xl rounded-3xl p-10 flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-12">
+                {/* Left - Image */}
+                <div className="w-full md:w-1/3 flex justify-center">
+                    <Image
+                        src="/nel.jpeg"
+                        alt="Support Our Campaign"
+                        width={340}
+                        height={340}
+                        className="rounded-2xl shadow-xl"
+                        priority
+                    />
+                </div>
+
+                {/* Right - Campaign Message & Contribution Methods */}
+                <div className="md:w-2/3 text-center md:text-left">
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                        Together, We Can Build a Brighter Future
+                    </h2>
+                    <p className="text-gray-700 mt-4 text-lg leading-relaxed">
+                        &quot;Every contribution brings us closer to change. Your support
+                        helps us empower communities, create opportunities, and make a
+                        lasting impact.&quot;
+                    </p>
+
+                    {/* Payment Methods Introduction */}
+                    <p className="mt-8 text-lg text-gray-700 max-w-3xl mx-auto font-semibold bg-yellow-100 p-4 rounded-lg shadow-lg">
+                        Use the payment numbers below to contribute via Airtel Money, MTN
+                        Mobile Money, or Bank of Africa.
+                    </p>
+
+                    {/* Contribution Methods */}
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {/* Airtel Money */}
+                        <div className="bg-red-500 p-6 rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 transition-transform duration-300 transform hover:shadow-xl">
+                            <Image
+                                src="/airtel.png"
+                                alt="Airtel Money"
+                                width={200}
+                                height={50}
+                                className="object-contain"
+                                priority
+                            />
+                            <button
+                                onClick={() => handleCopy("0702901590", "Airtel Money")}
+                                className="bg-white text-red-600 px-6 py-2 rounded-lg shadow-md hover:bg-red-100 transition duration-300 mb-4"
+                            >
+                                Copy Number
+                            </button>
+                        </div>
+
+                        {/* MTN Mobile Money */}
+                        <div className="bg-yellow-500 p-6 rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 transition-transform duration-300 transform hover:shadow-xl">
+                            <Image
+                                src="/mtn.png"
+                                alt="MTN Mobile Money"
+                                width={200}
+                                height={50}
+                                className="object-contain"
+                                priority
+                            />
+                            <button
+                                onClick={() => handleCopy("0772901590", "MTN Mobile Money")}
+                                className="bg-white text-yellow-500 px-6 py-2 rounded-lg shadow-md hover:bg-yellow-100 transition duration-300 mb-4"
+                            >
+                                Copy Number
+                            </button>
+                        </div>
+
+                        {/* Bank of Africa */}
+                        <div className="bg-[#159155] p-6 rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 transition-transform duration-300 transform hover:shadow-xl">
+                            <Image
+                                src="/boa.png"
+                                alt="Bank of Africa"
+                                width={200}
+                                height={50}
+                                className="object-contain"
+                                priority
+                            />
+                            <button
+                                onClick={() => handleCopy("15115412002", "Bank of Africa")}
+                                className="bg-white text-[#159155] px-6 py-2 rounded-lg shadow-md hover:bg-[#ebefed20] transition duration-300 mb-4"
+                            >
+                                Copy Number
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Copy Status Message */}
+                    {copyStatus && (
+                        <div className="mt-4 text-center text-lg font-semibold text-green-600">
+                            {copyStatus}
+                        </div>
+                    )}
+
+                    {/* Call to Action Button */}
+                    <div className="mt-10 flex justify-center md:justify-start">
+                        <button className="bg-red-600 hover:bg-red-700 text-white py-4 px-10 rounded-lg font-bold text-xl flex items-center justify-center space-x-3 transition transform hover:scale-105 shadow-md">
+                            <FaHandHoldingHeart className="text-2xl" />
+                            <span>Contribute Now</span>
+                        </button>
+                    </div>
+
+                    {/* Payment Solution Note */}
+                    <div className="mt-6 text-center text-lg text-gray-600 font-semibold">
+                        <p>
+                            <strong>Note:</strong> Payments through this button are not yet
+                            active, but we are actively working on integrating a secure
+                            payment solution.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     );
