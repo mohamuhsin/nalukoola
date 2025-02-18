@@ -62,7 +62,7 @@ export default function CampaignSection() {
                         {/* Airtel Money */}
                         <div className="bg-red-500 p-6 rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 transition-transform duration-300 transform hover:shadow-xl">
                             <Image
-                                src="/airtel.png"
+                                src="/AIRTEL.png"
                                 alt="Airtel Money"
                                 width={200}
                                 height={50}
@@ -80,7 +80,7 @@ export default function CampaignSection() {
                         {/* MTN Mobile Money */}
                         <div className="bg-yellow-500 p-6 rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 transition-transform duration-300 transform hover:shadow-xl">
                             <Image
-                                src="/mtn.png"
+                                src="/MTN.png"
                                 alt="MTN Mobile Money"
                                 width={200}
                                 height={50}
@@ -98,7 +98,7 @@ export default function CampaignSection() {
                         {/* Bank of Africa */}
                         <div className="bg-[#159155] p-6 rounded-xl shadow-lg flex flex-col justify-center items-center space-y-4 hover:scale-105 transition-transform duration-300 transform hover:shadow-xl">
                             <Image
-                                src="/boa.png"
+                                src="/BOA.png"
                                 alt="Bank of Africa"
                                 width={200}
                                 height={50}
