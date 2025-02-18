@@ -107,7 +107,7 @@ export default function CampaignSection() {
                             />
                             <button
                                 onClick={() => handleCopy("15115412002", "Bank of Africa")}
-                                className="bg-white text-[#159155] px-6 py-2 rounded-lg shadow-md hover:bg-[#ebefed20] transition duration-300 mb-4"
+                                className="bg-white text-[#159155] px-6 py-2 rounded-lg shadow-md hover:bg-[#c8ddcb] transition duration-300 mb-4"
                             >
                                 Copy Number
                             </button>
