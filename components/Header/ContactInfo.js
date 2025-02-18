@@ -17,7 +17,7 @@ export default function ContactInfo() {
 
             {/* Phone Link */}
             <Link
-                href="tel:+256700123456"
+                href="tel:+256772901590"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 py-2 px-4 rounded-lg"
                 aria-label="Phone Number"
             >
