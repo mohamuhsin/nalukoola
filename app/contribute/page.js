@@ -1,6 +1,6 @@
 import Header from "@/components/Header/header";
-import Contribute from "@/components/Contribute/Contribute";
 import Follow from "@/components/Follow/Follow";
+import CampaignSection from "@/components/Contribute/CampaignSection";
 
 export const metadata = {
     title: "Luyimbazi Elias Nalukoola | Contribution",
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="min-h-screen">
             <Header />
             <main>
-                <Contribute />
+                <CampaignSection />
                 <Follow />
             </main>
         </div>
