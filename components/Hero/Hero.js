@@ -93,7 +93,7 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.9 }}
                     className="mt-10 flex flex-col sm:flex-row gap-6"
                 >
-                    <Link href="/contribute">
+                    <Link href="/support-counsel-nalukoola-candidature">
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

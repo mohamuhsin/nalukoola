@@ -57,7 +57,7 @@ export default function AboutPolitician() {
                             in the community.
                         </p>
                         <div className="mt-6 flex justify-center">
-                            <Link href="/contribute">
+                            <Link href="/support-counsel-nalukoola-candidature">
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
