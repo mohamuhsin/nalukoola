@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Montserrat } from "next/font/google"; // Import Montserrat
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -28,7 +30,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>{children}</div>
+        <div>
+          {children}
+          <Analytics />
+        </div>
       </body>
     </html>
   );
