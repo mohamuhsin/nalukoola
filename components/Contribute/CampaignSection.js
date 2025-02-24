@@ -78,7 +78,7 @@ export default function CampaignSection() {
                     <CopyStatus status={copyStatus} />
 
                     {/* Call to Action Button */}
-                    <CallToActionButton />
+                    {/*<CallToActionButton />*/}
                     <Note />
                 </div>
             </div>
