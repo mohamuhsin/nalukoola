@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Luyimbazi Elias Nalukoola | Home",
+  title: "Nalukoola For Kawempe North | Home",
   description: "Nalukoola for Kawemppe North",
 };
 
