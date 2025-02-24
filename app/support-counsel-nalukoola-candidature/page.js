@@ -3,7 +3,7 @@ import Follow from "@/components/Follow/Follow";
 import CampaignSection from "@/components/Contribute/CampaignSection";
 
 export const metadata = {
-    title: "Spport Counsel Nalukoola Candidature",
+    title: "Support Counsel Nalukoola Candidature",
     description: "Join Nalukoola in this fight",
 };
 
