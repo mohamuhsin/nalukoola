@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google"; // Import Montserrat
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <div>
           {children}
           <Analytics />
+          <GoogleAnalytics gaId="G-XYZ" />
         </div>
       </body>
     </html>

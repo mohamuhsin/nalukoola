@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.1.7",
     "@vercel/analytics": "^1.5.0",
     "axios": "^1.7.9",
     "bcryptjs": "^3.0.0",
@@ -19,7 +20,7 @@
     "framer-motion": "^12.4.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.1",
-    "next": "15.1.6",
+    "next": "^15.1.7",
     "next-auth": "^4.24.11",
     "node-fetch": "^3.3.2",
     "nodemailer": "^6.10.0",
