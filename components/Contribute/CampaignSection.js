@@ -47,7 +47,7 @@ export default function CampaignSection() {
                     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         <PaymentMethodCard
                             method="Airtel Money"
-                            paymentNumber="0702901590"
+                            paymentNumber="256702901590"
                             onCopy={handleCopy}
                             backgroundColor="bg-red-500"
                             textColor="text-red-600"
@@ -56,7 +56,7 @@ export default function CampaignSection() {
                         />
                         <PaymentMethodCard
                             method="MTN Mobile Money"
-                            paymentNumber="0772901590"
+                            paymentNumber="256772901590"
                             onCopy={handleCopy}
                             backgroundColor="bg-yellow-500"
                             textColor="text-yellow-500"
