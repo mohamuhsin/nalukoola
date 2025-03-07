@@ -1,4 +1,4 @@
-import { FiPhone, FiMail, FiX, FiHome } from "react-icons/fi";
+import { FiPhone, FiMail, FiX, FiHome, FiFlag } from "react-icons/fi";
 import Button from "./Button";
 import Link from "next/link";
 
@@ -21,6 +21,15 @@ export default function MobileMenu({ toggleMenu }) {
                 >
                     <FiHome className="text-3xl text-[#dd0300]" />
                     <span className="text-lg sm:text-xl">Home</span>
+                </Link>
+
+                <Link
+                    href="/campaigns"
+                    className="flex items-center gap-3 text-lg sm:text-xl text-gray-300 hover:text-white transition duration-300 ease-in-out w-full py-2 px-3 rounded-lg"
+                    aria-label="Home"
+                >
+                    <FiFlag className="text-3xl text-[#dd0300]" />
+                    <span className="text-lg sm:text-xl">Campaigns</span>
                 </Link>
 
                 {/* Phone Number Link */}
