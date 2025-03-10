@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { useSwipeable } from "react-swipeable"; // Import the swipeable hook
 
 export default function CampaignsGallery() {
     const images = [
@@ -84,6 +85,14 @@ export default function CampaignsGallery() {
     const nextImage = () =>
         setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
+    // Swipeable configuration
+    const handlers = useSwipeable({
+        onSwipedLeft: nextImage, // Swiping left goes to next image
+        onSwipedRight: prevImage, // Swiping right goes to previous image
+        preventDefaultTouchmoveEvent: true, // Prevents default scrolling behavior during swipe
+        trackMouse: true, // For testing with mouse
+    });
+
     return (
         <div className="min-h-screen bg-white">
             {/* Header Section */}
@@ -123,6 +132,7 @@ export default function CampaignsGallery() {
                     role="dialog"
                     aria-labelledby="lightbox"
                     aria-hidden={!isOpen}
+                    {...handlers} // Add swipe handlers to the lightbox
                 >
                     <button
                         onClick={closeLightbox}
