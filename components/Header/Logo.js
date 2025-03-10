@@ -12,7 +12,7 @@ export default function Logo() {
                 <Image
                     src="/nalukoola.png" // Ensure this is the correct path
                     alt="Nalukoola Logo"
-                    width={150} // Adjust this as needed
+                    width={100} // Adjust this as needed
                     height={60} // Adjust this as needed
                     className="object-contain h-auto w-auto" // Ensures it scales correctly
                     priority
