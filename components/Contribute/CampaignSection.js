@@ -6,7 +6,6 @@ import CampaignMessage from "./CampaignMessage";
 import PaymentMethodsNote from "./PaymentMethodsNote";
 import PaymentMethodCard from "./PaymentMethodCard";
 import CopyStatus from "./CopyStatus";
-import CallToActionButton from "./CallToActionButton";
 import Note from "./Note";
 
 export default function CampaignSection() {
